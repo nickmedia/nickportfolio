@@ -1,0 +1,83 @@
+---
+import { Image } from "astro:assets";
+import bund from "../assets/images/bund.svg";
+import bund2 from "../assets/images/bund2.svg";
+import telefon from "../assets/images/telefon.svg";
+import mail from "../assets/images/mail.svg";
+import linkedin from "../assets/images/linkedin.svg";
+---
+
+<div id="kontakt" class="relative md:h-screen overflow-hidden pb-10">
+  <!-- Mobil SVG -->
+  <svg
+    class="block md:hidden w-full h-full absolute"
+    width="390"
+    height="583"
+    viewBox="0 0 390 583"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    preserveAspectRatio="none"
+  >
+    <path d="M0 188.859H197.45L390 0V583H0V188.859Z" fill="#070F68"></path>
+  </svg>
+
+  <!-- Desktop SVG -->
+  <svg
+    class="hidden md:block w-full h-full absolute"
+    width="1512"
+    height="726"
+    viewBox="0 0 1512 726"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    preserveAspectRatio="none"
+  >
+    <path d="M0 235.183H765.5L1512 0V726H0V235.183Z" fill="#070F68"></path>
+  </svg>
+
+  <div class="relative z-10 flex flex-col w-full h-full space-y-6">
+    <h1
+      class="text-[40px] md:text-[128px] font-bold font-oswald text-white text-center md:mt-96 mt-60 mb-10"
+    >
+      TAG KONTAKT TIL MIG!
+    </h1>
+
+    <!-- KONTAKT INFORMATION -->
+    <div
+      class="flex flex-col md:flex-row md:space-x-40 space-y-6 md:space-y-0 md:mx-40 mx-6"
+    >
+      <!-- Telefon -->
+      <div class="flex items-center space-x-6">
+        <Image src={telefon} alt="Telefon ikon" class="w-10 h-10" />
+        <a
+          href="tel:+4527200215"
+          class="text-white font-roboto font-bold text-[20px]"
+        >
+          +45 27 20 02 15
+        </a>
+      </div>
+
+      <!-- Mail -->
+      <div class="flex items-center space-x-6">
+        <Image src={mail} alt="Mail ikon" class="w-10 h-10" />
+        <a
+          href="mailto:nickjoergensen@icloud.com"
+          class="text-white font-roboto font-bold text-[20px]"
+        >
+          nickjoergensen@icloud.com
+        </a>
+      </div>
+
+      <!-- LinkedIn -->
+      <div class="flex items-center space-x-6">
+        <Image src={linkedin} alt="LinkedIn ikon" class="w-10 h-10" />
+        <a
+          href="https://www.linkedin.com/in/nick-jørgensen/"
+          target="_blank"
+          class="text-white font-roboto font-bold text-[20px]"
+        >
+          Nick Dion Jørgensen
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
