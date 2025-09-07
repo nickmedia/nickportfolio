@@ -88,63 +88,75 @@ import lightroom from "../assets/images/lightroom.svg";
     </a>
   </div>
 
-  <!-- Billede af dig -->
-  <div class="flex md:justify-end">
-    <Image src={mig} alt="Et billede af Nick" class="" />
-  </div>
+  <section
+    id="om-mig"
+    class="flex flex-col md:flex-row items-start md:gap-20 md:mt-72"
+  >
+    <!-- Højre side: billede -->
+    <div
+      class="w-full md:w-1/2 flex justify-center md:justify-center md:items-start order-first md:order-last z-10"
+    >
+      <Image
+        src={mig}
+        alt="Et billede af Nick"
+        class="max-w-full h-auto md:-mt-20"
+      />
+    </div>
 
-  <!-- Introduktion sektion -->
-  <section id="om-mig">
-    <div class="w-full bg-[#070F68] py-5">
-      <div class="container mx-auto">
-        <h2
-          class="font-oswald font-bold text-white text-[40px] text-center md:text-5xl"
-        >
-          INTRODUKTION
-        </h2>
+    <!-- Venstre side: tekst + værktøjer -->
+    <div class="w-full md:w-1/2">
+      <!-- Introduktion -->
+      <div class="md:w-full w-full bg-[#070F68] py-5">
+        <div class="container mx-auto px-5 md:px-20">
+          <h2
+            class="font-oswald font-bold text-white text-[40px] text-center md:text-left md:text-5xl"
+          >
+            INTRODUKTION
+          </h2>
+        </div>
       </div>
-    </div>
 
-    <p class="font-roboto text-[18px] text-[#0D0D0D] mx-10 mt-10">
-      Mit navn er Nick, og jeg brænder for at udvikle kreative webløsninger og
-      visuelt indhold, der engagerer brugere og skaber stærke digitale
-      oplevelser. <br /><br />
-      Jeg har erfaring med UI/UX, webdesign og grafisk design, og arbejder dagligt
-      med værktøjer som Adobe Photoshop, Illustrator og Figma. Mit fokus er at kombinere
-      æstetik med funktionalitet for at skabe brugervenlige og visuelt tiltalende
-      løsninger.<br /><br />
-      Uden for arbejdet finder jeg inspiration i madlavning, fotografi og musik,
-      som giver nye idéer og perspektiver, der ofte smitter af på mit designarbejde.
-    </p>
-
-    <!-- Værktøjer sektion -->
-    <div class="w-full bg-[#070F68] py-5 mt-10">
-      <div class="container mx-auto">
-        <h2
-          class="font-oswald font-bold text-white text-[40px] text-center md:text-5xl"
-        >
-          VÆRKTØJER
-        </h2>
+      <div class="px-5 md:px-20 mt-10">
+        <p class="font-roboto text-[18px] text-[#0D0D0D]">
+          Mit navn er Nick, og jeg brænder for at udvikle kreative webløsninger
+          og visuelt indhold, der engagerer brugere og skaber stærke digitale
+          oplevelser. <br /><br />
+          Jeg har erfaring med UI/UX, webdesign og grafisk design, og arbejder dagligt
+          med værktøjer som Adobe Photoshop, Illustrator og Figma. Mit fokus er at
+          kombinere æstetik med funktionalitet for at skabe brugervenlige og visuelt
+          tiltalende løsninger.<br /><br />
+          Uden for arbejdet finder jeg inspiration i madlavning, fotografi og musik,
+          som giver nye idéer og perspektiver, der ofte smitter af på mit designarbejde.
+        </p>
       </div>
-    </div>
 
-    <div class="flex space-x-10 items-center justify-center mt-10">
-      <Image src={html} alt="" class="w-16 h-16 object-contain" />
-      <Image src={css} alt="" class="w-16 h-16 object-contain" />
-      <Image src={js} alt="" class="w-16 h-16 object-contain" />
-      <Image src={tailwind} alt="" class="w-16 h-16 object-contain" />
-    </div>
-    <div class="flex space-x-10 items-center justify-center mt-5">
-      <Image src={astro} alt="" class="w-16 h-16 object-contain" />
-      <Image src={github} alt="" class="w-16 h-16 object-contain" />
-      <Image src={vscode} alt="" class="w-16 h-16 object-contain" />
-      <Image src={figma} alt="" class="w-16 h-16 object-contain" />
-    </div>
-    <div class="flex space-x-10 items-center justify-center mt-5">
-      <Image src={photoshop} alt="" class="w-16 h-16 object-contain" />
-      <Image src={premierepro} alt="" class="w-16 h-16 object-contain" />
-      <Image src={illustrator} alt="" class="w-16 h-16 object-contain" />
-      <Image src={lightroom} alt="" class="w-16 h-16 object-contain" />
+      <!-- Værktøjer -->
+      <div class="w-full bg-[#070F68] py-5 mt-10">
+        <div class="container mx-auto px-5 md:px-20">
+          <h2
+            class="font-oswald font-bold text-white text-[40px] text-center md:text-left md:text-5xl"
+          >
+            VÆRKTØJER
+          </h2>
+        </div>
+      </div>
+
+      <div
+        class="grid grid-cols-4 gap-10 justify-items-center mt-10 md:grid-cols-6 px-5 md:px-20"
+      >
+        <Image src={html} alt="" class="w-16 h-16 object-contain" />
+        <Image src={css} alt="" class="w-16 h-16 object-contain" />
+        <Image src={js} alt="" class="w-16 h-16 object-contain" />
+        <Image src={tailwind} alt="" class="w-16 h-16 object-contain" />
+        <Image src={astro} alt="" class="w-16 h-16 object-contain" />
+        <Image src={github} alt="" class="w-16 h-16 object-contain" />
+        <Image src={vscode} alt="" class="w-16 h-16 object-contain" />
+        <Image src={figma} alt="" class="w-16 h-16 object-contain" />
+        <Image src={photoshop} alt="" class="w-16 h-16 object-contain" />
+        <Image src={premierepro} alt="" class="w-16 h-16 object-contain" />
+        <Image src={illustrator} alt="" class="w-16 h-16 object-contain" />
+        <Image src={lightroom} alt="" class="w-16 h-16 object-contain" />
+      </div>
     </div>
   </section>
 
@@ -307,7 +319,7 @@ import lightroom from "../assets/images/lightroom.svg";
         <!-- Knap -->
         <div class="flex justify-center md:justify-start mt-5 md:mt-0">
           <a
-            href="https://kaffevaerk.netlify.app"
+            href="https://digitalskraldgruppe6.netlify.app"
             target="_blank"
             rel="noopener noreferrer"
             class="bg-[#070F68] text-white text-[24px] font-oswald px-20 py-4 hover:bg-[#4F8CFF] transition-colors"
@@ -366,7 +378,7 @@ import lightroom from "../assets/images/lightroom.svg";
         <!-- Knap -->
         <div class="flex justify-center md:justify-start mt-5 md:mt-0">
           <a
-            href="https://kaffevaerk.netlify.app"
+            href="https://doessingleusesuck.netlify.app"
             target="_blank"
             rel="noopener noreferrer"
             class="bg-[#070F68] text-white text-[24px] font-oswald px-20 py-4 hover:bg-blue-700 transition-colors"
@@ -427,7 +439,7 @@ import lightroom from "../assets/images/lightroom.svg";
         <!-- Knap -->
         <div class="flex justify-center md:justify-start mt-5 md:mt-0">
           <a
-            href="https://kaffevaerk.netlify.app"
+            href="https://burningfont.netlify.app"
             target="_blank"
             rel="noopener noreferrer"
             class="bg-[#070F68] text-white text-[24px] font-oswald px-20 py-4 hover:bg-blue-700 transition-colors btn-shake"
