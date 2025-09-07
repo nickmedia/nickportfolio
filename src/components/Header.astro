@@ -1,0 +1,110 @@
+---
+
+---
+
+<header class="absolute top-0 left-0 w-full z-50">
+  <div
+    class="container mx-auto flex justify-end items-center p-4 relative z-50"
+  >
+    <!-- Desktop Menu -->
+    <nav class="hidden md:flex space-x-6 mt-10">
+      <a
+        href="#om-mig"
+        class="text-white font-roboto font-bold text-[18px] hover:text-[#4F8CFF]
+         hover:translate-x-1 hover:-translate-y-1 hover:shadow-lg
+         transition-all duration-300 cursor-pointer"
+      >
+        OM MIG
+      </a>
+
+      <a
+        href="#projekter"
+        class="text-white font-roboto font-bold text-[18px] hover:text-[#4F8CFF]
+         hover:translate-x-1 hover:-translate-y-1 hover:shadow-lg
+         transition-all duration-300 cursor-pointer"
+        >PROJEKTER</a
+      >
+      <a
+        href="#kontakt"
+        class="text-white font-roboto font-bold text-[18px] hover:text-[#4F8CFF]
+         hover:translate-x-1 hover:-translate-y-1 hover:shadow-lg
+         transition-all duration-300 cursor-pointer"
+        >KONTAKT</a
+      >
+    </nav>
+
+    <!-- Mobile Burger -->
+    <button id="burger-btn" class="md:hidden focus:outline-none ml-4 z-50">
+      <svg
+        id="burger-icon"
+        class="w-6 h-6 text-white"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M3 12h18M3 6h18M3 18h18"></path>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile Menu Fullscreen -->
+  <nav
+    id="mobile-menu"
+    class="hidden fixed inset-0 bg-[#070F68] items-center justify-center space-y-8 text-2xl"
+  >
+    <a
+      href="#om-mig"
+      class="text-white font-roboto font-bold hover:text-blue-300">OM MIG</a
+    >
+    <a
+      href="#projekter"
+      class="text-white font-roboto font-bold hover:text-blue-300">PROJEKTER</a
+    >
+    <a
+      href="#kontakt"
+      class="text-white font-roboto font-bold hover:text-blue-300">KONTAKT</a
+    >
+  </nav>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const burgerBtn = document.getElementById("burger-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const burgerIcon = document.getElementById("burger-icon");
+      const body = document.body;
+
+      const toggleMenu = () => {
+        const isHidden = mobileMenu.classList.toggle("hidden");
+
+        if (!isHidden) {
+          // Vis menu
+          mobileMenu.classList.add("flex", "flex-col"); // Flex-kolonne
+          burgerIcon.innerHTML = `<path d="M6 18L18 6M6 6l12 12"/>`;
+          body.style.overflow = "hidden"; // Lås scroll
+        } else {
+          // Skjul menu
+          mobileMenu.classList.remove("flex", "flex-col");
+          burgerIcon.innerHTML = `<path d="M3 12h18M3 6h18M3 18h18"/>`;
+          body.style.overflow = ""; // Gendan scroll
+        }
+      };
+
+      const closeMenu = () => {
+        mobileMenu.classList.add("hidden");
+        mobileMenu.classList.remove("flex", "flex-col");
+        burgerIcon.innerHTML = `<path d="M3 12h18M3 6h18M3 18h18"/>`;
+        body.style.overflow = "";
+      };
+
+      burgerBtn.addEventListener("click", toggleMenu);
+
+      // Luk menu når man klikker på et link
+      mobileMenu.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", closeMenu);
+      });
+    });
+  </script>
+</header>

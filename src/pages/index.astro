@@ -1,0 +1,480 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Button from "../components/Button.astro";
+import Link from "../components/Link.astro";
+import { Image } from "astro:assets";
+import top from "../assets/images/top.svg";
+import top2 from "../assets/images/top2.svg";
+import mig from "../assets/images/mig.png";
+import tynd from "../assets/images/tynd.svg";
+import html from "../assets/images/html.svg";
+import css from "../assets/images/css.svg";
+import js from "../assets/images/javascript.svg";
+import tailwind from "../assets/images/tailwindcss.svg";
+import astro from "../assets/images/astro.svg";
+import github from "../assets/images/github.svg";
+import vscode from "../assets/images/vscode.svg";
+import figma from "../assets/images/figma.svg";
+import photoshop from "../assets/images/photoshop.svg";
+import premierepro from "../assets/images/premierepro.svg";
+import illustrator from "../assets/images/illustator.svg";
+import lightroom from "../assets/images/lightroom.svg";
+---
+
+<MainLayout title="Portfolio">
+  <!-- Hero sektion -->
+  <div class="relative w-full min-h-[500px] md:h-screen overflow-hidden">
+    <!-- Mobil SVG -->
+    <svg
+      class="block md:hidden w-full h-full absolute top-0 left-0"
+      viewBox="0 0 390 479"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      preserveAspectRatio="none"
+    >
+      <path d="M0 0H390V247.549L221.825 247.549L0 479V0Z" fill="#070F68"></path>
+    </svg>
+
+    <!-- Desktop SVG -->
+    <svg
+      class="hidden md:block w-full h-full absolute top-0 left-0"
+      viewBox="0 0 1512 856"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      preserveAspectRatio="none"
+    >
+      <path d="M0 0H1512V442.384L860 442.384L0 856V0Z" fill="#070F68"></path>
+    </svg>
+
+    <!-- Navn -->
+    <h1
+      class="absolute top-20 left-10 text-[48px] md:text-[128px] font-bold font-totalblack text-white leading-[1.1]"
+    >
+      NICK DION JØRGENSEN
+    </h1>
+
+    <!-- DIGITAL + DESIGNER -->
+    <div
+      class="absolute top-[320px] left-[65%] transform -translate-x-1/2 flex flex-col space-y-2
+             md:top-[450px] md:left-3/4 md:transform-none"
+    >
+      <h1
+        class="text-[48px] md:text-[128px] font-bold font-totalblack text-[#0D0D0D] leading-[1.1] self-end"
+      >
+        DIGITAL
+      </h1>
+      <h1
+        class="text-[48px] md:text-[128px] font-bold font-totalblack text-[#0D0D0D] leading-[1.1]"
+      >
+        DESIGNER
+      </h1>
+    </div>
+
+    <!-- Pilen under teksten -->
+    <a
+      href="#om-mig"
+      class="absolute left-1/2 bottom-1 md:bottom-3 transform -translate-x-1/2 animate-bounce cursor-pointer"
+    >
+      <svg
+        width="40"
+        height="32"
+        viewBox="0 0 86 74"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M43 74L0.564749 0.5L85.4353 0.500007L43 74Z" fill="#070F68"
+        ></path>
+      </svg>
+    </a>
+  </div>
+
+  <!-- Billede af dig -->
+  <div class="flex md:justify-end">
+    <Image src={mig} alt="Et billede af Nick" class="" />
+  </div>
+
+  <!-- Introduktion sektion -->
+  <section id="om-mig">
+    <div class="w-full bg-[#070F68] py-5">
+      <div class="container mx-auto">
+        <h2
+          class="font-oswald font-bold text-white text-[40px] text-center md:text-5xl"
+        >
+          INTRODUKTION
+        </h2>
+      </div>
+    </div>
+
+    <p class="font-roboto text-[18px] text-[#0D0D0D] mx-10 mt-10">
+      Mit navn er Nick, og jeg brænder for at udvikle kreative webløsninger og
+      visuelt indhold, der engagerer brugere og skaber stærke digitale
+      oplevelser. <br /><br />
+      Jeg har erfaring med UI/UX, webdesign og grafisk design, og arbejder dagligt
+      med værktøjer som Adobe Photoshop, Illustrator og Figma. Mit fokus er at kombinere
+      æstetik med funktionalitet for at skabe brugervenlige og visuelt tiltalende
+      løsninger.<br /><br />
+      Uden for arbejdet finder jeg inspiration i madlavning, fotografi og musik,
+      som giver nye idéer og perspektiver, der ofte smitter af på mit designarbejde.
+    </p>
+
+    <!-- Værktøjer sektion -->
+    <div class="w-full bg-[#070F68] py-5 mt-10">
+      <div class="container mx-auto">
+        <h2
+          class="font-oswald font-bold text-white text-[40px] text-center md:text-5xl"
+        >
+          VÆRKTØJER
+        </h2>
+      </div>
+    </div>
+    <div class="flex space-x-10 items-center justify-center mt-5">
+      <Image src={html} alt="" class="w-16 h-16 object-contain" />
+      <Image src={css} alt="" class="w-16 h-16 object-contain" />
+      <Image src={js} alt="" class="w-16 h-16 object-contain" />
+      <Image src={tailwind} alt="" class="w-16 h-16 object-contain" />
+    </div>
+    <div class="flex space-x-10 items-center justify-center mt-5">
+      <Image src={astro} alt="" class="w-16 h-16 object-contain" />
+      <Image src={github} alt="" class="w-16 h-16 object-contain" />
+      <Image src={vscode} alt="" class="w-16 h-16 object-contain" />
+      <Image src={figma} alt="" class="w-16 h-16 object-contain" />
+    </div>
+    <div class="flex space-x-10 items-center justify-center mt-5">
+      <Image src={photoshop} alt="" class="w-16 h-16 object-contain" />
+      <Image src={premierepro} alt="" class="w-16 h-16 object-contain" />
+      <Image src={illustrator} alt="" class="w-16 h-16 object-contain" />
+      <Image src={lightroom} alt="" class="w-16 h-16 object-contain" />
+    </div>
+  </section>
+
+  <!-- Rolling Banner -->
+  <section class="overflow-hidden bg-[#070F68] py-5 mt-20">
+    <div class="relative w-full flex">
+      <!-- Indhold 1 -->
+      <div class="animate-marquee flex whitespace-nowrap">
+        <span
+          class="font-oswald font-bold text-white text-[40px] md:text-5xl mx-10"
+        >
+          PROJEKTER
+        </span>
+        <span
+          class="font-oswald font-bold text-white text-[40px] md:text-5xl mx-10"
+        >
+          PROJEKTER
+        </span>
+        <span
+          class="font-oswald font-bold text-white text-[40px] md:text-5xl mx-10"
+        >
+          PROJEKTER
+        </span>
+        <span
+          class="font-oswald font-bold text-white text-[40px] md:text-5xl mx-10"
+        >
+          PROJEKTER
+        </span>
+      </div>
+
+      <!-- Indhold 2  -->
+      <div class="animate-marquee flex whitespace-nowrap" aria-hidden="true">
+        <span
+          class="font-oswald font-bold text-white text-[40px] md:text-5xl mx-10"
+        >
+          PROJEKTER
+        </span>
+        <span
+          class="font-oswald font-bold text-white text-[40px] md:text-5xl mx-10"
+        >
+          PROJEKTER
+        </span>
+        <span
+          class="font-oswald font-bold text-white text-[40px] md:text-5xl mx-10"
+        >
+          PROJEKTER
+        </span>
+        <span
+          class="font-oswald font-bold text-white text-[40px] md:text-5xl mx-10"
+        >
+          PROJEKTER
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- KAFFEVAERK -->
+  <section class="md:my-60 mt-10">
+    <div
+      class="flex flex-col md:flex-row items-start md:items-stretch md:justify-between mx-5 md:mx-20 gap-8"
+    >
+      <!-- Video -->
+      <div class="w-full md:w-1/2 flex justify-center">
+        <video
+          src="/videos/kaffevaerk.mp4"
+          autoplay
+          loop
+          muted
+          class="md:w-full h-auto md:h-full object-cover border border-[#070F68]"
+          style="box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);"
+        >
+          Din browser understøtter ikke videoen.
+        </video>
+      </div>
+
+      <!-- Tekst + knap -->
+      <div
+        class="w-full md:w-1/2 flex flex-col justify-between h-auto md:h-full"
+      >
+        <!-- Tekst -->
+        <div>
+          <h3
+            class="font-oswald font-bold text-[36px] text-center md:text-[48px] md:text-left mt-5 md:mt-0"
+          >
+            KAFFEVAERK
+          </h3>
+          <p
+            class="font-roboto text-[18px] text-[#0D0D0D] mx-5 md:mx-0 mt-5 md:mt-3 md:text-left"
+          >
+            Som mit afsluttende eksamensprojekt redesignede jeg Kaffevaerks
+            hjemmeside med fokus på brugervenlighed, visuel branding og
+            sammenhæng med sociale medier. <br /><br />
+            Jeg arbejdede selvstændigt med hele processen fra planlægning til design
+            i Figma og implementering af layout og styling med Tailwind CSS, samt
+            dataintegration via Supabase. Resultatet er en mere engagerende og intuitiv
+            weboplevelse, der afspejler virksomhedens værdier og styrker deres digitale
+            identitet.
+          </p>
+        </div>
+
+        <!-- Knap -->
+        <div class="flex justify-center md:justify-start mt-5 md:mt-0">
+          <a
+            href="https://kaffevaerk.netlify.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="bg-[#070F68] text-white text-[24px] font-oswald px-20 py-4 hover:bg-[#4F8CFF] transition-colors"
+          >
+            BESØG WEBSITE
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIGITAL SKRALDEDAG -->
+  <section class="my-10 md:my-60">
+    <div
+      class="flex flex-col md:flex-row items-start md:items-stretch md:justify-between mx-5 md:mx-20 gap-8"
+    >
+      <!-- Video -->
+      <div class="w-full md:w-1/2 flex justify-center">
+        <video
+          src="/videos/digital.mp4"
+          autoplay
+          loop
+          muted
+          class="md:w-full h-auto md:h-full object-cover border border-[#070F68]"
+          style="box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);"
+        >
+          Din browser understøtter ikke videoen.
+        </video>
+      </div>
+
+      <!-- Tekst + knap -->
+      <div
+        class="w-full md:w-1/2 flex flex-col justify-between h-auto md:h-full"
+      >
+        <!-- Tekst -->
+        <div>
+          <h3
+            class="font-oswald font-bold text-[36px] text-center md:text-[48px] md:text-left mt-5 md:mt-0"
+          >
+            DIGITAL SKRALDEDAG
+          </h3>
+          <p
+            class="font-roboto text-[18px] text-[#0D0D0D] mx-5 md:mx-0 mt-5 md:mt-3 md:text-left"
+          >
+            Jeg redesignede Digital Skraldedag’s weboplevelse med fokus på et
+            rent, effektivt og brugervenligt design. Jeg arbejdede med
+            frameworks som Astro og Tailwind CSS for at skabe en hurtig og let
+            hjemmeside. <br /><br />
+            Bæredygtighed var en vigtig del af projektet. Jeg brugte billedkomprimering
+            og moderne formater som WebP for at reducere sideindlæsningstider og
+            energiforbrug. Resultatet er en hurtig, interaktiv og visuelt tiltalende
+            hjemmeside, der skaber en engagerende brugeroplevelse.
+          </p>
+        </div>
+
+        <!-- Knap -->
+        <div class="flex justify-center md:justify-start mt-5 md:mt-0">
+          <a
+            href="https://kaffevaerk.netlify.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="bg-[#070F68] text-white text-[24px] font-oswald px-20 py-4 hover:bg-[#4F8CFF] transition-colors"
+          >
+            BESØG WEBSITE
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- #SINGLEUSESUCKS -->
+  <section class="my-10 md:my-60">
+    <div
+      class="flex flex-col md:flex-row items-start md:items-stretch md:justify-between mx-5 md:mx-20 gap-8"
+    >
+      <!-- Video -->
+      <div class="w-full md:w-1/2 flex justify-center">
+        <video
+          src="/videos/kaffevaerk.mp4"
+          autoplay
+          loop
+          muted
+          class="md:w-full h-auto md:h-full object-cover border border-[#070F68]"
+          style="box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);"
+        >
+          Din browser understøtter ikke videoen.
+        </video>
+      </div>
+
+      <!-- Tekst + knap -->
+      <div
+        class="w-full md:w-1/2 flex flex-col justify-between h-auto md:h-full"
+      >
+        <!-- Tekst -->
+        <div>
+          <h3
+            class="font-oswald font-bold text-[36px] text-center md:text-[48px] md:text-left mt-5 md:mt-0"
+          >
+            #SINGLEUSESUCKS
+          </h3>
+          <p
+            class="font-roboto text-[18px] text-[#0D0D0D] mx-5 md:mx-0 mt-5 md:mt-3 md:text-left"
+          >
+            Jeg designede en hjemmeside for organisationen Plastic Change,
+            baseret på deres populære slogan på sociale medier. Projektet havde
+            fokus på at skabe en engagerende oplevelse med
+            overraskelseselementer, animationer og interaktive detaljer, så
+            siden skiller sig ud. <br /><br />
+            Fra koncept og prototyper i Figma til implementering med Tailwind CSS
+            og HTML arbejdede jeg med hele processen, og skabte en interaktiv og
+            visuelt appellerende hjemmeside.
+          </p>
+        </div>
+
+        <!-- Knap -->
+        <div class="flex justify-center md:justify-start mt-5 md:mt-0">
+          <a
+            href="https://kaffevaerk.netlify.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="bg-[#070F68] text-white text-[24px] font-oswald px-20 py-4 hover:bg-blue-700 transition-colors"
+          >
+            BESØG WEBSITE
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BURNING FONT -->
+  <section class="my-10 md:my-60">
+    <div
+      class="flex flex-col md:flex-row items-start md:items-stretch md:justify-between mx-5 md:mx-20 gap-8"
+    >
+      <!-- Video -->
+      <div class="w-full md:w-1/2 flex justify-center">
+        <video
+          src="/videos/kaffevaerk.mp4"
+          autoplay
+          loop
+          muted
+          class="md:w-full h-auto md:h-full object-cover border border-[#070F68]"
+          style="box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);"
+        >
+          Din browser understøtter ikke videoen.
+        </video>
+      </div>
+
+      <!-- Tekst + knap -->
+      <div
+        class="w-full md:w-1/2 flex flex-col justify-between h-auto md:h-full"
+      >
+        <!-- Tekst -->
+        <div>
+          <h3
+            class="font-oswald font-bold text-[36px] text-center md:text-[48px] md:text-left mt-5 md:mt-0"
+          >
+            BURNING FONT
+          </h3>
+          <p
+            class="font-roboto text-[18px] text-[#0D0D0D] mx-5 md:mx-0 mt-5 md:mt-3 md:text-left"
+          >
+            Jeg skabte skrifttypen Burning, som kombinerer rå, kantede linjer
+            med bløde, flydende former for at skabe et unikt og dynamisk visuelt
+            udtryk. Projektet havde fokus på at udvikle en font med karakter og
+            kontrast, der kan bruges i logoer, plakater og branding. <br /><br
+            />
+            Processen gik fra moodboard og research til konstruktion af bogstaver
+            i Adobe Illustrator, hvor jeg eksperimenterede med geometriske former
+            og organiske linjer for at finde balancen mellem styrke og elegance.
+            Resultatet er en skrifttype, der udfordrer typografiske normer og demonstrerer
+            mine evner inden for typografi, designproces og kreativ eksperimentering.
+          </p>
+        </div>
+
+        <!-- Knap -->
+        <div class="flex justify-center md:justify-start mt-5 md:mt-0">
+          <a
+            href="https://kaffevaerk.netlify.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="bg-[#070F68] text-white text-[24px] font-oswald px-20 py-4 hover:bg-blue-700 transition-colors btn-shake"
+          >
+            BESØG WEBSITE
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    @keyframes marquee {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+    .animate-marquee {
+      display: inline-flex;
+      animation: marquee 5s linear infinite;
+    }
+
+    @keyframes shake {
+      0% {
+        transform: translateX(0);
+      }
+      20% {
+        transform: translateX(-2px);
+      }
+      40% {
+        transform: translateX(2px);
+      }
+      60% {
+        transform: translateX(-2px);
+      }
+      80% {
+        transform: translateX(2px);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+    .btn-shake:hover {
+      animation: shake 0.3s ease-in-out infinite;
+    }
+  </style>
+</MainLayout>
