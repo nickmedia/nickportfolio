@@ -36,15 +36,17 @@ import linkedin from "../assets/images/linkedin.svg";
 
   <div class="relative z-10 flex flex-col w-full h-full space-y-6">
     <h1
-      class="text-[40px] md:text-[128px] font-bold font-oswald text-white text-center md:mt-72 mt-60 mb-10"
+      class="text-[40px] md:text-[128px] font-bold font-oswald text-white text-center md:mt-96 mt-60 mb-10"
     >
       TAG KONTAKT TIL MIG!
     </h1>
 
     <!-- KONTAKT INFORMATION -->
-    <div class="mx-6 space-y-10">
+    <div
+      class="flex flex-col md:flex-row md:space-x-40 space-y-6 md:space-y-0 md:mx-40 mx-6"
+    >
       <!-- Telefon -->
-      <div class="flex items-center space-x-3">
+      <div class="flex items-center space-x-6">
         <Image src={telefon} alt="Telefon ikon" class="w-10 h-10" />
         <a
           href="tel:+4527200215"
@@ -55,7 +57,7 @@ import linkedin from "../assets/images/linkedin.svg";
       </div>
 
       <!-- Mail -->
-      <div class="flex items-center space-x-3">
+      <div class="flex items-center space-x-6">
         <Image src={mail} alt="Mail ikon" class="w-10 h-10" />
         <a
           href="mailto:nickjoergensen@icloud.com"
@@ -66,7 +68,7 @@ import linkedin from "../assets/images/linkedin.svg";
       </div>
 
       <!-- LinkedIn -->
-      <div class="flex items-center space-x-3">
+      <div class="flex items-center space-x-6">
         <Image src={linkedin} alt="LinkedIn ikon" class="w-10 h-10" />
         <a
           href="https://www.linkedin.com/in/nick-jørgensen/"
