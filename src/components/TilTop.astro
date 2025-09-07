@@ -1,0 +1,69 @@
+<!-- Til toppen knap -->
+<button
+  id="tilTopBtn"
+  class="hidden fixed bottom-6 right-6 z-50 bg-[#070F68] text-white p-3 shadow-lg hover:bg-[#0613A0] transition-colors cursor-pointer btn-shake"
+  aria-label="Til toppen"
+>
+  <!-- Pil op SVG -->
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    class="h-6 w-6"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+  >
+    <path
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      d="M5 15l7-7 7 7"></path>
+  </svg>
+</button>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const btn = document.getElementById("tilTopBtn");
+    if (!btn) return;
+
+    // Vis knappen når brugeren scroller ned
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+        btn.classList.remove("hidden");
+      } else {
+        btn.classList.add("hidden");
+      }
+    });
+
+    // Klik = scroll til toppen
+    btn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  });
+</script>
+
+<style>
+  @keyframes shake {
+    0% {
+      transform: translateX(0);
+    }
+    20% {
+      transform: translateX(-2px);
+    }
+    40% {
+      transform: translateX(2px);
+    }
+    60% {
+      transform: translateX(-2px);
+    }
+    80% {
+      transform: translateX(2px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  .btn-shake:hover {
+    animation: shake 0.3s ease-in-out infinite;
+  }
+</style>
