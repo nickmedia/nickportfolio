@@ -106,7 +106,7 @@ import lightroom from "../assets/images/lightroom.svg";
     <!-- Venstre side: tekst + værktøjer -->
     <div class="w-full md:w-1/2">
       <!-- Introduktion -->
-      <div class="md:w-full w-full bg-[#070F68] py-5">
+      <div class="md:w-full w-full bg-[#070F68] py-5 fade3">
         <div class="container mx-auto px-5 md:px-18">
           <h2
             class="font-oswald font-bold text-white text-[40px] text-center md:text-left md:text-[64px]"
@@ -116,7 +116,7 @@ import lightroom from "../assets/images/lightroom.svg";
         </div>
       </div>
 
-      <p class="font-roboto text-[16px] text-[#0D0D0D] mx-10 mt-10">
+      <p class="font-roboto text-[16px] text-[#0D0D0D] mx-10 mt-10 fade4">
         Mit navn er Nick, og jeg brænder for at udvikle kreative webløsninger og
         visuelt indhold, der engagerer brugere og skaber stærke digitale
         oplevelser. <br /><br />
@@ -129,7 +129,7 @@ import lightroom from "../assets/images/lightroom.svg";
       </p>
 
       <!-- Værktøjer -->
-      <div class="w-full bg-[#070F68] py-5 mt-10">
+      <div class="w-full bg-[#070F68] py-5 mt-10 fade5">
         <div class="container mx-auto px-5 md:px-20">
           <h2
             class="font-oswald font-bold text-white text-[40px] text-center md:text-left md:text-[64px]"
@@ -140,7 +140,7 @@ import lightroom from "../assets/images/lightroom.svg";
       </div>
 
       <div
-        class="grid grid-cols-4 gap-10 justify-items-center mt-10 md:grid-cols-6 px-5 md:px-20"
+        class="grid grid-cols-4 gap-10 justify-items-center mt-10 md:grid-cols-6 px-5 md:px-20 fade6"
       >
         <Image src={html} alt="" class="w-16 h-16 object-contain" />
         <Image src={css} alt="" class="w-16 h-16 object-contain" />
@@ -510,6 +510,46 @@ import lightroom from "../assets/images/lightroom.svg";
       "animate__animated",
       "animate__slideInRight",
       "animate__delay-0.5s"
+    );
+  });
+
+  const fade3 = document.querySelector(".fade3");
+
+  inView(fade3, () => {
+    fade3.classList.add(
+      "animate__animated",
+      "animate__slideInLeft",
+      "animate__delay-1s"
+    );
+  });
+
+  const fade4 = document.querySelector(".fade4");
+
+  inView(fade4, () => {
+    fade4.classList.add(
+      "animate__animated",
+      "animate__slideInLeft",
+      "animate__delay-1s"
+    );
+  });
+
+  const fade5 = document.querySelector(".fade5");
+
+  inView(fade5, () => {
+    fade5.classList.add(
+      "animate__animated",
+      "animate__slideInLeft",
+      "animate__delay-1s"
+    );
+  });
+
+  const fade6 = document.querySelector(".fade6");
+
+  inView(fade6, () => {
+    fade6.classList.add(
+      "animate__animated",
+      "animate__slideInLeft",
+      "animate__delay-1s"
     );
   });
 </script>
