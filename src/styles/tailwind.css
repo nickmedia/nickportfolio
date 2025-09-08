@@ -1,8 +1,5 @@
+/* 1️⃣ Alle imports først */
 @import "tailwindcss";
-
-/* Plugins */
-@plugin '@tailwindcss/typography';
-@plugin '@tailwindcss/forms';
 @import "tailwindcss-animated";
 @import "tailwindcss-intersect";
 
@@ -10,14 +7,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
-/* Tilføj fonts til Tailwind theme */
+/* 2️⃣ Plugins kommer efter imports */
+@plugin '@tailwindcss/typography';
+@plugin '@tailwindcss/forms';
+
+/* 3️⃣ Tilføj fonts til Tailwind theme */
 @theme {
   --font-oswald: "Oswald", sans-serif;
   --font-roboto: "Roboto", sans-serif;
   --font-totalblack: "totalblack-variable", sans-serif;
 }
 
-/* Base styles */
+/* 4️⃣ Base styles */
 @layer base {
   *,
   ::after,
@@ -28,9 +29,8 @@
   }
 }
 
-/* Custom utilities (kun hvis du har brug for ekstra) */
+/* 5️⃣ Custom utilities */
 @layer utilities {
-  /* Eksempel: en heavy version af totalblack */
   .font-totalblack-heavy {
     font-family: var(--font-totalblack);
     font-variation-settings: "wght" 900;
