@@ -219,7 +219,7 @@ import lightroom from "../assets/images/lightroom.svg";
       class="flex flex-col md:flex-row items-start md:items-stretch md:justify-between mx-5 md:mx-20 gap-8"
     >
       <!-- Video -->
-      <div class="w-full md:w-1/2 flex justify-center">
+      <div class="w-full md:w-1/2 flex justify-center fade7">
         <video
           src="/videos/kaffevaerk.mp4"
           autoplay
@@ -234,7 +234,7 @@ import lightroom from "../assets/images/lightroom.svg";
 
       <!-- Tekst + knap -->
       <div
-        class="w-full md:w-1/2 flex flex-col justify-between h-auto md:h-full"
+        class="w-full md:w-1/2 flex flex-col justify-between h-auto md:h-full fade8"
       >
         <!-- Tekst -->
         <div>
@@ -278,7 +278,7 @@ import lightroom from "../assets/images/lightroom.svg";
       class="flex flex-col md:flex-row items-start md:items-stretch md:justify-between mx-5 md:mx-20 gap-8"
     >
       <!-- Video -->
-      <div class="w-full md:w-1/2 flex justify-center">
+      <div class="w-full md:w-1/2 flex justify-center fade9">
         <video
           src="/videos/digital.mp4"
           autoplay
@@ -293,7 +293,7 @@ import lightroom from "../assets/images/lightroom.svg";
 
       <!-- Tekst + knap -->
       <div
-        class="w-full md:w-1/2 flex flex-col justify-between h-auto md:h-full"
+        class="w-full md:w-1/2 flex flex-col justify-between h-auto md:h-full fade10"
       >
         <!-- Tekst -->
         <div>
@@ -337,7 +337,7 @@ import lightroom from "../assets/images/lightroom.svg";
       class="flex flex-col md:flex-row items-start md:items-stretch md:justify-between mx-5 md:mx-20 gap-8"
     >
       <!-- Video -->
-      <div class="w-full md:w-1/2 flex justify-center">
+      <div class="w-full md:w-1/2 flex justify-center fade11">
         <video
           src="/videos/singleusesucks.mp4"
           autoplay
@@ -352,7 +352,7 @@ import lightroom from "../assets/images/lightroom.svg";
 
       <!-- Tekst + knap -->
       <div
-        class="w-full md:w-1/2 flex flex-col justify-between h-auto md:h-full"
+        class="w-full md:w-1/2 flex flex-col justify-between h-auto md:h-full fade12"
       >
         <!-- Tekst -->
         <div>
@@ -396,7 +396,7 @@ import lightroom from "../assets/images/lightroom.svg";
       class="flex flex-col md:flex-row items-start md:items-stretch md:justify-between mx-5 md:mx-20 gap-8"
     >
       <!-- Video -->
-      <div class="w-full md:w-1/2 flex justify-center">
+      <div class="w-full md:w-1/2 flex justify-center fade13">
         <video
           src="/videos/burning.mp4"
           autoplay
@@ -411,7 +411,7 @@ import lightroom from "../assets/images/lightroom.svg";
 
       <!-- Tekst + knap -->
       <div
-        class="w-full md:w-1/2 flex flex-col justify-between h-auto md:h-full"
+        class="w-full md:w-1/2 flex flex-col justify-between h-auto md:h-full fade14"
       >
         <!-- Tekst -->
         <div>
@@ -551,6 +551,94 @@ import lightroom from "../assets/images/lightroom.svg";
     fade6.classList.add(
       "animate__animated",
       "animate__slideInLeft",
+      "animate__delay-1s"
+    );
+  });
+
+  const fade7 = document.querySelector(".fade7");
+
+  inView(fade7, () => {
+    fade7.classList.add(
+      "animate__animated",
+      "animate__fadeInLeft",
+      "fadeInOpacity",
+      "animate__delay-1s"
+    );
+  });
+
+  const fade8 = document.querySelector(".fade8");
+
+  inView(fade8, () => {
+    fade8.classList.add(
+      "animate__animated",
+      "animate__fadeInRight",
+      "fadeInOpacity",
+      "animate__delay-1s"
+    );
+  });
+
+  const fade9 = document.querySelector(".fade9");
+
+  inView(fade9, () => {
+    fade9.classList.add(
+      "animate__animated",
+      "animate__fadeInLeft",
+      "fadeInOpacity",
+      "animate__delay-1s"
+    );
+  });
+
+  const fade10 = document.querySelector(".fade10");
+
+  inView(fade10, () => {
+    fade10.classList.add(
+      "animate__animated",
+      "animate__fadeInRight",
+      "fadeInOpacity",
+      "animate__delay-1s"
+    );
+  });
+
+  const fade11 = document.querySelector(".fade11");
+
+  inView(fade11, () => {
+    fade11.classList.add(
+      "animate__animated",
+      "animate__fadeInLeft",
+      "fadeInOpacity",
+      "animate__delay-1s"
+    );
+  });
+
+  const fade12 = document.querySelector(".fade12");
+
+  inView(fade12, () => {
+    fade12.classList.add(
+      "animate__animated",
+      "animate__fadeInRight",
+      "fadeInOpacity",
+      "animate__delay-1s"
+    );
+  });
+
+  const fade13 = document.querySelector(".fade13");
+
+  inView(fade13, () => {
+    fade13.classList.add(
+      "animate__animated",
+      "animate__fadeInLeft",
+      "fadeInOpacity",
+      "animate__delay-1s"
+    );
+  });
+
+  const fade14 = document.querySelector(".fade14");
+
+  inView(fade14, () => {
+    fade14.classList.add(
+      "animate__animated",
+      "animate__fadeInRight",
+      "fadeInOpacity",
       "animate__delay-1s"
     );
   });
